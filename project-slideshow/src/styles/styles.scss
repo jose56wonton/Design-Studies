@@ -1,53 +1,63 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 @font-face {
-    font-family: 'Averta';
-    src:  url('AvertaDemoPE-Regular.otf') format('otf')
+  font-family: "Averta";
+  src: url("AvertaDemoPE-Regular.otf") format("otf");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Averta", sans-serif;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.container {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+}
+.largeCard {
+  position: absolute;
+  width: 90%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.smallCard {
+  position: absolute;
+  width: 50%;
+  height: 40%;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
+  border: 1px solid black;
+  z-index: 100;
+  border-radius: 4px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  .textTop {
+    width:50%;
+    h2 {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    h4 {
+      font-weight: 400;
+    }
   }
-
-body{
-    padding:0;
-    margin:0;
-    font-family: 'Averta', sans-serif;
-}
-.page{
-    width:100vw;
-    height:100vh;
-    position: relative;
-}
-.container{
-    width: 100%;
-    max-width: 1100px;
-    position: relative;
-    height:100%;
-    margin: 0 auto;
-}
-.largeCard{
-    position: absolute;
-    width:90%;
-    height:50%;
-    left:50%;
-    top:50%;
-    transform: translate(-50%,-50%);
-}
-.smallCard{
-    position: absolute;
-    width: 50%;
-    height: 40%;
-    left: 50%;
-    top:50%;
-    background-color:#fff;
-    transform: translate(-50%,-50%);
-    box-shadow: 4px 4px 4px rgba(0,0,0,.08);
-    border: 1px solid black;
-    z-index: 100;
-    border-radius: 4px;
-    padding: 50px;
-    h2{
-        text-transform: uppercase;
-        font-weight: 700;
-
-    }
-    h4{
-        font-weight: 400;
-    }
+  .textBottom {
+      width:75%;
+      font-size: 1em;
+      line-height:1.7em;
+  }
 }

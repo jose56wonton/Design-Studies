@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
 @font-face {
-  font-family: 'Averta';
+  font-family: "Averta";
   src: url("AvertaDemoPE-Regular.otf") format("otf"); }
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Averta', sans-serif; }
+  font-family: "Averta", sans-serif; }
 
 .page {
   width: 100vw;
@@ -39,9 +39,18 @@ body {
   border: 1px solid black;
   z-index: 100;
   border-radius: 4px;
-  padding: 50px; }
-  .smallCard h2 {
-    text-transform: uppercase;
-    font-weight: 700; }
-  .smallCard h4 {
-    font-weight: 400; }
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; }
+  .smallCard .textTop {
+    width: 50%; }
+    .smallCard .textTop h2 {
+      text-transform: uppercase;
+      font-weight: 700; }
+    .smallCard .textTop h4 {
+      font-weight: 400; }
+  .smallCard .textBottom {
+    width: 75%;
+    font-size: 1em;
+    line-height: 1.7em; }

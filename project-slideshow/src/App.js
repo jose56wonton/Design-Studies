@@ -8,13 +8,17 @@ class App extends Component {
           <div className="largeCard">dsdaf</div>
           <div className="smallCard">
             <div className="textTop">
-            
+              <h2>mhint</h2>
+              <h4>Your life smarter.</h4>
             </div>
             <div className="textBottom">
-              
+              <p>
+                <span>What we did</span>
+                <br />
+                Direction, User Experience, User Interface, Development and
+                Advertising.
+              </p>
             </div>
-            <h2>mhint</h2>
-            <h4>Your life smarter.</h4>
           </div>
         </div>
       </div>
