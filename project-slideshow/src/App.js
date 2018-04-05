@@ -5,7 +5,15 @@ class App extends Component {
     return (
       <div className="page">
         <div className="container">
-          <div className="largeCard">dsdaf</div>
+          <div className="largeCard">
+            <div className="left">
+            <h1>Mhint</h1>
+            </div>
+            <div className="right">
+            
+            </div>
+            
+          </div>
           <div className="smallCard">
             <div className="textTop">
               <h2>mhint</h2>
