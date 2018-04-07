@@ -1,20 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700");
+
 @font-face {
   font-family: "Averta";
   src: url("./AvertaDemoPE-Regular.otf") format("otf");
 }
-// @font-face{
-//     font-family: "Majesti";
-//     src: url('./Majesti-Banner-Medium.otf') format("otf");
-// }
-// @font-face{
-//   font-family: "Majesti-Light";
-//   src: url('./Majesti-Banner-Light.otf') format('otf');
-// }
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,700');
-root{
+
+root {
   font-size: 10px;
 }
+$color-0: rgb(103, 228, 201);
+$color-1: rgb(232, 143, 98);
+$color-2: rgb(39, 54, 66);
+$color-3: rgb(74, 144, 226);
 
 body {
   padding: 0;
@@ -40,22 +38,19 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-weight: 300;
-  color: rgb(103, 228, 201);
   font-size: 8rem;
   display: flex;
   flex-direction: row;
 
-  .left{
+  .left {
     height: 100%;
-    width:60%;
-
+    width: 60%;
   }
-  .right{
-    
+  .right {
     height: 100%;
-    width:40%;
+    width: 40%;
   }
 }
 .smallCard {
@@ -65,7 +60,7 @@ body {
   left: 50%;
   top: 50%;
   background-color: #fff;
-  opacity: .93;
+  opacity: 0.93;
   transform: translate(-50%, -50%);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.08);
   z-index: 100;
@@ -75,7 +70,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   .textTop {
-    width:50%;
+    width: 50%;
     h2 {
       text-transform: uppercase;
       font-weight: 700;
@@ -85,25 +80,28 @@ body {
     }
   }
   .textBottom {
-      width:75%;
-      font-size: 1em;
-      line-height:1.7em;
+    width: 75%;
+    font-size: 1em;
+    line-height: 1.7em;
   }
 }
-.background-0{
-  background:linear-gradient(rgba(103, 228, 201, 0.8), rgba(103, 228, 201, 0.6)), center, center / cover, url("../images/0.jpg");
+@mixin background-color($color, $num) {
+  background: linear-gradient(rgba($color, 0.8) rgba($color, 0.6)),
+  left top / cover url("../images/"+$num+".jpg");
 }
-.background-1{
-  background:linear-gradient(rgba(232, 143, 98, 0.8), rgba(232, 143, 98, 0.6)), center, center / cover, url("../images/1.jpg");
+.background-0 {
+  @include background-color($color-0, "0");
 }
-.background-2{
-  background:linear-gradient(rgba(39, 54, 66, 0.8), rgba(39, 54, 66, 0.6)), center, center / cover, url("../images/2.jpg");
+.background-1 {
+  @include background-color($color-1, "1");
 }
-.background-3{
-  background:linear-gradient(rgba(74, 144, 226, 0.8), rgba(74, 144, 226, 0.6)), center, center / cover, url("../images/3.jpg");
+.background-2 {
+  @include background-color($color-2, "2");
+}
+.background-3 {
+  @include background-color($color-3, "3");
 }
 
-a{
-    cursor: pointer;
-
+a {
+  cursor: pointer;
 }
